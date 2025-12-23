@@ -1,0 +1,8 @@
+This folder is for images and other assets used by the site.
+
+Add your logo and photos here, for example:
+- logo.svg
+- wedding-1.jpg
+- corporate-1.jpg
+
+If you want me to add sample images or optimize assets, tell me what style/subjects you'd like.
