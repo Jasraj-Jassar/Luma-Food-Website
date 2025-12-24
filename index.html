@@ -6,7 +6,37 @@
     <title>Luma Food — Catering & Events</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <meta name="description" content="Luma Food — Fresh, modern catering for events, weddings, and corporate gatherings.">
+    <meta name="description" content="Luma Food — Authentic Persian catering for weddings, events, and celebrations. Traditional Iranian recipes with modern presentation.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Luma Food",
+      "description": "Authentic Persian catering for weddings, events, and celebrations",
+      "servesCuisine": "Persian",
+      "telephone": "+1-555-123-4567",
+      "email": "test@lumafood.test",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "menu": {
+        "@type": "Menu",
+        "hasMenuSection": {
+          "@type": "MenuSection",
+          "name": "Persian Culinary Heritage",
+          "hasMenuItem": [
+            {"@type": "MenuItem", "name": "Persian Polo", "description": "Fragrant basmati rice with tender lamb, almonds, and barberries"},
+            {"@type": "MenuItem", "name": "Ghormeh Sabzi", "description": "Traditional herb stew with kidney beans, dried lime, and tender lamb"},
+            {"@type": "MenuItem", "name": "Dolmeh", "description": "Grape leaves stuffed with aromatic rice, fresh herbs, and Persian spices"},
+            {"@type": "MenuItem", "name": "Koofteh", "description": "Large Persian meatballs with rice, split peas, and aromatic herbs"},
+            {"@type": "MenuItem", "name": "Tahchin", "description": "Saffron rice cake layered with tender chicken and barberries"},
+            {"@type": "MenuItem", "name": "Baklava Roses", "description": "Delicate rose-shaped pastry with pistachios and honey"}
+          ]
+        }
+      }
+    }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -15,64 +45,65 @@
           <img src="assets/Logo.jpg" alt="Luma Food logo" class="header-logo">
           <span class="brand-text">Luma Food</span>
         </div>
-        <nav class="nav">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
           <a href="#menu">Menu</a>
           <a href="#services">Services</a>
-          <a href="#gallery">Gallery</a>
           <a href="#contact" class="cta">Get a Quote</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" role="banner" aria-labelledby="hero-title">
         <div class="container hero-inner">
-          <h2>Authentic Persian flavors for your special moments</h2>
-          <p>Traditional recipes passed down through generations, bringing the warmth of Iranian hospitality to your table. Perfect for weddings, family gatherings, and celebrations.</p>
-          <a href="#contact" class="btn primary">Request a Quote</a>
+          <h2 id="hero-title">Authentic Persian flavors for your special moments</h2>
+          <p class="hero-description">Traditional recipes passed down through generations, bringing the warmth of Iranian hospitality to your table. Perfect for weddings, family gatherings, and celebrations.</p>
+          <a href="#contact" class="btn primary" aria-describedby="hero-description">Request a Quote</a>
         </div>
       </section>
 
-      <section id="menu" class="section container">
-        <h3>Our Persian Culinary Heritage</h3>
-        <div class="grid menu-grid">
-          <article class="card menu-item">
-            <img src="assets/Kabul_Pulao.jpg" alt="Persian Polo with saffron and nuts" class="menu-img">
+      <section id="menu" class="section container" role="main" aria-labelledby="menu-title">
+        <header class="section-header">
+          <h3 id="menu-title">Our Persian Culinary Heritage</h3>
+        </header>
+        <div class="grid menu-grid" role="list" aria-label="Persian dishes menu">
+          <article class="card menu-item" role="listitem">
+            <img src="assets/Kabul_Pulao.jpg" alt="Persian Polo with saffron and nuts" class="menu-img" loading="lazy">
             <div class="menu-content">
               <h4>Persian Polo</h4>
               <p>Fragrant basmati rice with tender lamb, almonds, and barberries</p>
             </div>
           </article>
-          <article class="card menu-item">
-            <img src="assets/Masgouf.png" alt="Ghormeh Sabzi - Traditional Persian herb stew" class="menu-img">
+          <article class="card menu-item" role="listitem">
+            <img src="assets/Masgouf.png" alt="Ghormeh Sabzi - Traditional Persian herb stew" class="menu-img" loading="lazy">
             <div class="menu-content">
               <h4>Ghormeh Sabzi</h4>
               <p>Traditional herb stew with kidney beans, dried lime, and tender lamb</p>
             </div>
           </article>
-          <article class="card menu-item">
-            <img src="assets/Dolma.png" alt="Dolmeh - Persian stuffed grape leaves" class="menu-img">
+          <article class="card menu-item" role="listitem">
+            <img src="assets/Dolma.png" alt="Dolmeh - Persian stuffed grape leaves" class="menu-img" loading="lazy">
             <div class="menu-content">
               <h4>Dolmeh</h4>
               <p>Grape leaves stuffed with aromatic rice, fresh herbs, and Persian spices</p>
             </div>
           </article>
-          <article class="card menu-item">
-            <img src="assets/Kubba.png" alt="Koofteh - Persian meatballs" class="menu-img">
+          <article class="card menu-item" role="listitem">
+            <img src="assets/Kubba.png" alt="Koofteh - Persian meatballs" class="menu-img" loading="lazy">
             <div class="menu-content">
               <h4>Koofteh</h4>
               <p>Large Persian meatballs with rice, split peas, and aromatic herbs</p>
             </div>
           </article>
-          <article class="card menu-item">
-            <img src="assets/Tahchin.png" alt="Tahchin - Persian saffron rice cake" class="menu-img">
+          <article class="card menu-item" role="listitem">
+            <img src="assets/Tahchin.png" alt="Tahchin - Persian saffron rice cake" class="menu-img" loading="lazy">
             <div class="menu-content">
               <h4>Tahchin</h4>
               <p>Saffron rice cake layered with tender chicken and barberries</p>
             </div>
           </article>
-          <article class="card menu-item">
-            <img src="assets/Baklava_Roses.png" alt="Persian Baklava with pistachios and rosewater" class="menu-img">
+          <article class="card menu-item" role="listitem">
+            <img src="assets/Baklava_Roses.png" alt="Persian Baklava with pistachios and rosewater" class="menu-img" loading="lazy">
             <div class="menu-content">
               <h4>Baklava Roses</h4>
               <p>Delicate rose-shaped pastry with pistachios and honey</p>
@@ -81,30 +112,45 @@
         </div>
       </section>
 
-      <section id="services" class="section alt">
+      <section id="services" class="section alt" role="complementary" aria-labelledby="services-title">
         <div class="container">
-          <h3>Services</h3>
-          <ul class="services-list">
-            <li>Full-service catering (staff, setup, cleanup)</li>
-            <li>Drop-off catering for smaller events</li>
-            <li>Custom menu design & tastings</li>
-            <li>Event planning partnerships</li>
+          <header class="section-header">
+            <h3 id="services-title">Our Catering Services</h3>
+          </header>
+          <ul class="services-list" role="list">
+            <li role="listitem">Full-service catering (staff, setup, cleanup)</li>
+            <li role="listitem">Drop-off catering for smaller events</li>
+            <li role="listitem">Custom menu design & tastings</li>
+            <li role="listitem">Event planning partnerships</li>
           </ul>
         </div>
       </section>
 
-      <section id="contact" class="section contact alt">
+      <section id="contact" class="section contact alt" role="contentinfo" aria-labelledby="contact-title">
         <div class="container contact-block">
-          <h3>Get in touch</h3>
-          <p class="lead">For quotes, tastings, or menu questions, reach us at:</p>
-          <ul class="contact-list">
-            <li>Email: <a href="mailto:test@lumafood.test">test@lumafood.test</a></li>
-            <li>Phone: <a href="tel:+15551234567">+1 (555) 123-4567</a></li>
-            <li>WhatsApp: <a href="https://wa.me/15551234567" target="_blank" rel="noopener">+1 (555) 123-4567</a></li>
-          </ul>
-          <p class="muted">Available Mon–Fri, 9am–6pm. For urgent requests please call or WhatsApp.</p>
+          <header class="section-header">
+            <h3 id="contact-title">Get in touch</h3>
+            <p class="lead">For quotes, tastings, or menu questions, reach us at:</p>
+          </header>
+          <div class="contact-info">
+            <ul class="contact-list" role="list" aria-label="Contact information">
+              <li role="listitem">
+                <span class="contact-method">Email:</span>
+                <a href="mailto:test@lumafood.test" aria-label="Send email to Luma Food">test@lumafood.test</a>
+              </li>
+              <li role="listitem">
+                <span class="contact-method">Phone:</span>
+                <a href="tel:+15551234567" aria-label="Call Luma Food">+1 (555) 123-4567</a>
+              </li>
+              <li role="listitem">
+                <span class="contact-method">WhatsApp:</span>
+                <a href="https://wa.me/15551234567" target="_blank" rel="noopener" aria-label="Message Luma Food on WhatsApp">+1 (555) 123-4567</a>
+              </li>
+            </ul>
+            <p class="contact-hours muted">Available Mon–Fri, 9am–6pm. For urgent requests please call or WhatsApp.</p>
+          </div>
           <div class="contact-ctas">
-            <a class="btn primary" href="mailto:test@lumafood.test">Email Us</a>
+            <a class="btn primary" href="mailto:test@lumafood.test" aria-label="Send email to Luma Food for catering inquiry">Email Us</a>
           </div>
         </div>
       </section>
