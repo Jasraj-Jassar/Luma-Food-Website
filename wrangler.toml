@@ -1,0 +1,5 @@
+name = "lumafood"
+compatibility_date = "2024-12-01"
+
+# Pages project (not a Worker)
+pages_build_output_dir = "dist"
