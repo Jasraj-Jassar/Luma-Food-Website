@@ -41,6 +41,10 @@ h1,h2,h3,h4{font-family:'Playfair Display',serif;color:var(--accent-dark);margin
 .btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,0.1)}
 .btn.primary{background:linear-gradient(135deg, var(--accent) 0%, #e67030 100%);color:#fff;border-color:transparent;box-shadow:0 6px 18px rgba(196,75,41,0.12)}
 .btn.primary:hover{background:linear-gradient(135deg, #e67030 0%, var(--accent) 100%);box-shadow:0 8px 24px rgba(196,75,41,0.2);transform:translateY(-2px)}
+.btn.call{background:linear-gradient(135deg, #1f6feb 0%, #2d8cff 100%);color:#fff;border-color:transparent;box-shadow:0 6px 18px rgba(31,111,235,0.18)}
+.btn.call:hover{background:linear-gradient(135deg, #2d8cff 0%, #1f6feb 100%);box-shadow:0 8px 24px rgba(31,111,235,0.28);transform:translateY(-2px)}
+.btn.whatsapp{background:linear-gradient(135deg, #25d366 0%, #1aa851 100%);color:#fff;border-color:transparent;box-shadow:0 6px 18px rgba(37,211,102,0.18)}
+.btn.whatsapp:hover{background:linear-gradient(135deg, #1aa851 0%, #25d366 100%);box-shadow:0 8px 24px rgba(37,211,102,0.28);transform:translateY(-2px)}
 
 .section{padding:3rem 0}
 .alt{background:linear-gradient(45deg, rgba(249,244,238,0.7) 0%, rgba(255,249,245,0.9) 100%), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><circle cx="30" cy="30" r="1" fill="%23d4622d" opacity="0.05"/><circle cx="10" cy="10" r="0.5" fill="%23f4b382" opacity="0.08"/><circle cx="50" cy="50" r="0.8" fill="%23a0471f" opacity="0.06"/></svg>');background-size:auto, 120px 120px}
