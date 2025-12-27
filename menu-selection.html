@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Luma Food — Menu Selection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/Logo.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Explore the full Luma Food menu for catering, events, and celebrations.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Luma Food",
+      "description": "Authentic Persian catering for weddings, events, and celebrations",
+      "servesCuisine": "Persian",
+      "telephone": "+1-555-123-4567",
+      "email": "test@lumafood.test",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "menu": {
+        "@type": "Menu",
+        "hasMenuSection": {
+          "@type": "MenuSection",
+          "name": "Persian Culinary Heritage",
+          "hasMenuItem": [
+            {"@type": "MenuItem", "name": "Persian Polo", "description": "Fragrant basmati rice with tender lamb, almonds, and barberries"},
+            {"@type": "MenuItem", "name": "Dolmeh", "description": "Grape leaves stuffed with aromatic rice, fresh herbs, and Persian spices"},
+            {"@type": "MenuItem", "name": "Koofteh", "description": "Large Persian meatballs with rice, split peas, and aromatic herbs"},
+            {"@type": "MenuItem", "name": "Tahchin", "description": "Saffron rice cake layered with tender chicken and barberries"},
+            {"@type": "MenuItem", "name": "Baklava Roses", "description": "Delicate rose-shaped pastry with pistachios and honey"},
+            {"@type": "MenuItem", "name": "Qabili Palau", "description": "A traditional Afghan rice dish made with fragrant basmati rice, tender meat, caramelized carrots, and raisins — rich, aromatic, and deeply satisfying."},
+            {"@type": "MenuItem", "name": "Spinach Börek", "description": "A golden, flaky pastry filled with fresh spinach and herbs — light, savory, and freshly baked"},
+            {"@type": "MenuItem", "name": "Macaroni Salad", "description": "A creamy, refreshing salad made with tender pasta, fresh vegetables, and a rich homemade dressing — perfect for any gathering."},
+            {"@type": "MenuItem", "name": "Mini Burgers, Big on Flavor!", "description": "Small in size, huge in taste! Each bite is packed with juicy beef, fresh lettuce, ripe tomatoes, and our special sauce, all served in a soft mini bun. perfect for snacks, parties, or a quick tasty treat!"},
+            {"@type": "MenuItem", "name": "Mini Pizzas, Big on Flavor!", "description": "Small in size, huge in taste! Loaded with melted cheese, fresh tomatoes, colorful bell peppers, and your favorite toppings on a soft, golden crust. Perfect for snacks, parties, or sharing with friends and family!"},
+            {"@type": "MenuItem", "name": "Kofta, Bursting with Flavor!", "description": "Juicy, tender meatballs seasoned with fresh herbs and spices, served with a rich tomato sauce. Perfect for a hearty meal, family gatherings, or sharing with loved ones!"},
+            {"@type": "MenuItem", "name": "Finger Food Platter, Perfect for Every Occasion!", "description": "A delightful assortment of bite-sized treats, from mini sandwiches and savory pastries to fresh veggies and dips. Ideal for parties, gatherings, or any moment you want to impress your guests with variety and flavor!"},
+            {"@type": "MenuItem", "name": "Creamy Milk Soup, Comfort in Every Spoon!", "description": "A smooth and velvety milk-based soup, gently flavored with natural ingredients to warm your soul and delight your taste buds. Perfect as a soothing starter or a light, comforting treat!"},
+            {"@type": "MenuItem", "name": "Barley Soup", "description": "A warm, hearty soup made with pearl barley, fresh vegetables, and aromatic herbs — simple, nourishing, and comforting."},
+            {"@type": "MenuItem", "name": "Stuffed Eggplant – A Flavorful Delight", "description": "Tender eggplants filled with a savory mixture of fresh herbs, vegetables, and spices, baked to perfection. Perfect for a hearty meal, family gatherings, or sharing with friends!"}
+          ]
+        }
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <img src="assets/Logo.jpg" alt="Luma Food logo" class="header-logo">
+          <span class="brand-text">Luma Food</span>
+        </div>
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <a href="#menu">Menu</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#contact" class="cta">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="menu" class="section container menu-section" role="main" aria-labelledby="menu-title">
+        <header class="section-header">
+          <h3 id="menu-title">Our Persian Culinary Heritage</h3>
+        </header>
+        <div class="grid menu-grid" role="list" aria-label="Persian dishes menu">
+          <article class="card menu-item" role="listitem">
+            <img src="assets/Kabul_Pulao.jpg" alt="Persian Polo with saffron and nuts" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Persian Polo</h4>
+              <p>Fragrant basmati rice with tender lamb, almonds, and barberries</p>
+            </div>
+          </article>
+          <article class="card menu-item" role="listitem">
+            <img src="assets/Dolma.png" alt="Dolmeh - Persian stuffed grape leaves" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Dolmeh</h4>
+              <p>Grape leaves stuffed with aromatic rice, fresh herbs, and Persian spices</p>
+            </div>
+          </article>
+          <article class="card menu-item" role="listitem">
+            <img src="assets/Kubba.png" alt="Koofteh - Persian meatballs" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Koofteh</h4>
+              <p>Large Persian meatballs with rice, split peas, and aromatic herbs</p>
+            </div>
+          </article>
+          <article class="card menu-item" role="listitem">
+            <img src="assets/Tahchin.png" alt="Tahchin - Persian saffron rice cake" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Tahchin</h4>
+              <p>Saffron rice cake layered with tender chicken and barberries</p>
+            </div>
+          </article>
+          <article class="card menu-item" role="listitem">
+            <img src="assets/Baklava_Roses.png" alt="Persian Baklava with pistachios and rosewater" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Baklava Roses</h4>
+              <p>Delicate rose-shaped pastry with pistachios and honey</p>
+            </div>
+          </article>
+          <article class="card menu-item" role="listitem">
+            <img src="assets/QabiliPalau.png" alt="Qabili Palau" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Qabili Palau</h4>
+              <p>A traditional Afghan rice dish made with fragrant basmati rice, tender meat, caramelized carrots, and raisins — rich, aromatic, and deeply satisfying.</p>
+            </div>
+          </article>
+          <article class="card menu-item" role="listitem">
+            <img src="assets/SpinachBörek.png" alt="Spinach Börek" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Spinach Börek</h4>
+              <p>A golden, flaky pastry filled with fresh spinach and herbs — light, savory, and freshly baked</p>
+            </div>
+          </article>
+          <article class="card menu-item" role="listitem">
+            <img src="assets/MacaroniSalad.png" alt="Macaroni Salad" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Macaroni Salad</h4>
+              <p>A creamy, refreshing salad made with tender pasta, fresh vegetables, and a rich homemade dressing — perfect for any gathering.</p>
+            </div>
+          </article>
+          <article class="card menu-item" role="listitem">
+            <img src="assets/MiniBurgers.png" alt="Mini Burgers, Big on Flavor!" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Mini Burgers, Big on Flavor!</h4>
+              <p>Small in size, huge in taste! Each bite is packed with juicy beef, fresh lettuce, ripe tomatoes, and our special sauce, all served in a soft mini bun. perfect for snacks, parties, or a quick tasty treat!</p>
+            </div>
+          </article>
+          <article class="card menu-item" role="listitem">
+            <img src="assets/MiniPizza.png" alt="Mini Pizzas, Big on Flavor!" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Mini Pizzas, Big on Flavor!</h4>
+              <p>Small in size, huge in taste! Loaded with melted cheese, fresh tomatoes, colorful bell peppers, and your favorite toppings on a soft, golden crust. Perfect for snacks, parties, or sharing with friends and family!</p>
+            </div>
+          </article>
+          <article class="card menu-item" role="listitem">
+            <img src="assets/Kofta.png" alt="Kofta, Bursting with Flavor!" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Kofta, Bursting with Flavor!</h4>
+              <p>Juicy, tender meatballs seasoned with fresh herbs and spices, served with a rich tomato sauce. Perfect for a hearty meal, family gatherings, or sharing with loved ones!</p>
+            </div>
+          </article>
+          <article class="card menu-item" role="listitem">
+            <img src="assets/FingerFoodPlatter.png" alt="Finger Food Platter, Perfect for Every Occasion!" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Finger Food Platter, Perfect for Every Occasion!</h4>
+              <p>A delightful assortment of bite-sized treats, from mini sandwiches and savory pastries to fresh veggies and dips. Ideal for parties, gatherings, or any moment you want to impress your guests with variety and flavor!</p>
+            </div>
+          </article>
+          <article class="card menu-item" role="listitem">
+            <img src="assets/CreamyMilkSoup.png" alt="Creamy Milk Soup, Comfort in Every Spoon!" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Creamy Milk Soup, Comfort in Every Spoon!</h4>
+              <p>A smooth and velvety milk-based soup, gently flavored with natural ingredients to warm your soul and delight your taste buds. Perfect as a soothing starter or a light, comforting treat!</p>
+            </div>
+          </article>
+          <article class="card menu-item" role="listitem">
+            <img src="assets/BarleySoup.png" alt="Barley Soup" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Barley Soup</h4>
+              <p>A warm, hearty soup made with pearl barley, fresh vegetables, and aromatic herbs — simple, nourishing, and comforting.</p>
+            </div>
+          </article>
+          <article class="card menu-item" role="listitem">
+            <img src="assets/StuffedEggplant.png" alt="Stuffed Eggplant – A Flavorful Delight" class="menu-img" loading="lazy">
+            <div class="menu-content">
+              <h4>Stuffed Eggplant – A Flavorful Delight</h4>
+              <p>Tender eggplants filled with a savory mixture of fresh herbs, vegetables, and spices, baked to perfection. Perfect for a hearty meal, family gatherings, or sharing with friends!</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Luma Food — Local catering. Built with care.</p>
+        <small class="muted">Contact: hello@lumafood.example</small>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
